@@ -39,12 +39,12 @@ struct Graph
         // lets iterate through each node and print its neighbours
         for (int i = 0; i < n; i++)
         {
-            cout << nodes[i].label << " :";
+            cout << nodes[i].label << " :[";
             for (int neighbour : nodes[i].neighbours)
             {
                 cout << " " << neighbour;
             }
-            cout << endl;
+            cout << "]" << endl;
         }
     }
 };
