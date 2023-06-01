@@ -9,14 +9,14 @@ void printSolution(int distance[], int src)
 {
     cout << endl
          << "Vertex \t\t Distance from Source " << src << endl;
-    int average = 0;
+    int sum = 0;
     for (int i = 0; i < V; i++)
     {
-        average += distance[i] / 5;
+        sum += distance[i];
         cout << i << " \t\t " << distance[i] << endl;
     }
     cout << endl;
-    cout << "Average time : " << average << endl;
+    cout << "Average time : " << (double)sum / 5 << endl;
 }
 
 int minimumDistance(int distance[], bool sptSet[])
